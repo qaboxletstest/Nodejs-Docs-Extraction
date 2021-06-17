@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "QA BOX <qabox@gmail.com>",
+  "author": "QA BOX LET's TEST<qaboxletstest@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "pdf-parse": "^1.1.1"
