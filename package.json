@@ -11,6 +11,7 @@
   "license": "MIT",
   "dependencies": {
     "pdf-parse": "^1.1.1",
-    "tesseract.js": "^2.1.4"
+    "tesseract.js": "^2.1.4",
+    "word-extractor": "^1.0.3"
   }
 }
