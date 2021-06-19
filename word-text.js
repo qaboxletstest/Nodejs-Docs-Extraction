@@ -1,16 +1,18 @@
 const WordExtractor = require("word-extractor");
-// const extractor = new WordExtractor();
-// const extracted = extractor.extract("word-text.docx");
+const extractor = new WordExtractor();
+const extracted = extractor.extract("word-text.docx");
 const fs = require("fs")
 
-// extracted.then(docx => {
-//     // console.log(docx.getBody())
-//     // console.log(docx.getHeaders())
-//     // console.log(docx.getFootnotes())
-//     console.log(docx.getTextboxes())
-// }).catch(err => {
-//     console.log(err.message)
-// })
+extracted.then(docx => {
+    // console.log(docx.getBody())
+    // console.log(docx.getHeaders())
+    console.log(docx.getHeaders({ includeFooters: false }))
+    // console.log(docx.getFootnotes())
+    console.log(docx.getTextboxes())
+    console.log(docx.getTextboxes({ includeHeadersAndFooters: false }))
+}).catch(err => {
+    console.log(err.message)
+})
 
 const getWordText = async (fileName) => {
     try {
